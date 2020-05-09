@@ -1,11 +1,11 @@
 import React from "react";
 
 const Title = (props) => {
-  const { title, description, updateTitleBtnAction } = props;
+  const { title, body, updateTitleBtnAction } = props;
   return (
     <div>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <p>{body}</p>
 
       <button onClick={updateTitleBtnAction}>Update Title</button>
     </div>
