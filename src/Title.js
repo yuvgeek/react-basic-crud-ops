@@ -1,7 +1,7 @@
 import React from "react";
 
 const Title = (props) => {
-  const { title, body, updateTitleBtnAction } = props;
+  const { title, body, updateTitleBtnAction, index } = props;
   return (
     <div>
       <h1>{title}</h1>

@@ -18,17 +18,19 @@ class App extends React.PureComponent {
         {this.state.list.map((item, i) => (
           <Title
             key={i}
+            index={i}
             title={item.title}
             body={item.body}
-            updateTitleBtnAction={this.updateTitleBtnAction}
+            updateTitleBtnAction={() => this.updateTitleBtnAction(i)}
           />
         ))}
       </div>
     );
   }
 
-  updateTitleBtnAction = () => {
-    this.setState({ title: "Sudharsan" });
+  updateTitleBtnAction = (index) => {
+    console.log("index", index);
+    let name = 'Sudharsan Sir';
   };
 
   apiCall = () => {
